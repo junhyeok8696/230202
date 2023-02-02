@@ -1,0 +1,18 @@
+# Q0 Answer template
+
+def solution(a, b):
+    if a < b:
+        min = a
+    else:
+        min = b
+        
+    for i in range(min, 0, -1):
+        if a % i == 0 and b % i == 0:
+            answer = i
+            break
+    
+    return answer
+
+
+c = solution(12, 16)
+print(c)
