@@ -1,0 +1,11 @@
+# Q6 Answer template
+
+def solution(n):
+    answer = n ** (1/2)
+    
+    if answer % 1 == 0:
+        return int((answer + 1) ** 2)
+    else:
+        return -1
+    
+solution(121)
