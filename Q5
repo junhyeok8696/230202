@@ -1,0 +1,17 @@
+# Q5 Answer Template
+
+n = input('숫자를 입력하세요. ')
+left = 0
+right = 0
+medium = len(n) // 2
+
+for i in range(0, medium):
+    left += int(n[i])
+
+for j in range(medium, len(n)):
+    right += int(n[j])
+    
+if left == right:
+    print("LUCKY")
+else:
+    print("READY")
