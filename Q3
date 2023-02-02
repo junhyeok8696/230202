@@ -1,0 +1,16 @@
+# Q2 Answer template
+
+N = int(input())
+count = 0
+num = N
+
+while True:
+    numsum = (num // 10) + (num % 10)
+    newnum = ((num % 10) * 10) + numsum % 10
+    count += 1
+    
+    if newnum == N:
+        break
+    num = newnum
+
+print(count)
